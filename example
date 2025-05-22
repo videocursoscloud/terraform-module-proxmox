@@ -1,0 +1,17 @@
+module "testvm"{
+  source = "/home/mijack/vcc/terraform-module-proxmox"
+  name = "testvm"
+  target_node = "microserver57"
+  clone_source_name = "ubuntu-jammy"
+  ip = "10.0.55.88/24"
+  gw = "10.0.55.54"
+  size = "10G"
+
+  ci_user = "mijack"
+  ci_nameserver = "8.8.8.8"
+  ci_searchdomain = "homelab.localdomain"
+
+  ci_sshkeys = <<-EOT
+    ssh-rsa XXXXXX
+  EOT
+}

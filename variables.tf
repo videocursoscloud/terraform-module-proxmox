@@ -1,0 +1,10 @@
+variable "name"{}
+variable "target_node"{}
+variable "ip"{}
+variable "gw"{}
+variable "ci_user"{}
+variable "ci_sshkeys"{}
+variable "ci_nameserver"{}
+variable "ci_searchdomain"{}
+variable "size"{}
+variable "clone_source_name"{}
