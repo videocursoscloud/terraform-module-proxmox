@@ -1,8 +1,18 @@
-variable "memory"{}
-variable "balloon"{}
-variable "cpu_cores"{}
-variable "cpu_sockets"{}
-variable "cpus"{}
+variable "memory"{
+  default = "1024"
+}
+variable "balloon"{
+  default = "1024"
+}
+variable "cpu_cores"{
+	default = 1
+}
+variable "cpu_sockets"{
+	default = 1
+}
+variable "cpus"{
+	default = 1
+}
 variable "name"{}
 variable "target_node"{}
 variable "ip"{}
