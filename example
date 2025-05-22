@@ -1,5 +1,5 @@
 module "testvm"{
-  source = "/home/mijack/vcc/terraform-module-proxmox"
+  source = "git::git@github.com:videocursoscloud/terraform-module-proxmox.git"
   name = "testvm"
   target_node = "microserver57"
   clone_source_name = "ubuntu-jammy"
