@@ -3,6 +3,15 @@ resource "proxmox_vm_qemu" "testvm" {
   target_node = var.target_node
   clone = var.clone_source_name
 
+  cpu_type = "kvm64"
+  cores    = var.cpu_cores
+  sockets  = var.cpu_sockets
+  vcpus    = var.cpus
+
+
+  memory   = var.memory
+  balloon  = var.balloon
+
   full_clone = "true"
   scsihw   = "virtio-scsi-pci"
   boot                   = "order=scsi0"
