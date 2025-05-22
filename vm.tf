@@ -3,7 +3,6 @@ resource "proxmox_vm_qemu" "testvm" {
   target_node = var.target_node
   clone = var.clone_source_name
 
-  cpu_type = "kvm64"
   cores    = var.cpu_cores
   sockets  = var.cpu_sockets
   vcpus    = var.cpus
