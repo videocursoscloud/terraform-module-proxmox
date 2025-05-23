@@ -10,9 +10,6 @@ variable "cpu_cores"{
 variable "cpu_sockets"{
 	default = 1
 }
-variable "cpus"{
-	default = 1
-}
 variable "name"{}
 variable "target_node"{}
 variable "ip"{}

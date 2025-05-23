@@ -3,9 +3,10 @@ resource "proxmox_vm_qemu" "testvm" {
   target_node = var.target_node
   clone = var.clone_source_name
 
-  cores    = var.cpu_cores
-  sockets  = var.cpu_sockets
-  vcpus    = var.cpus
+  cpu  {
+	cores = var.cpu_cores
+	sockets = var.cpu_sockets
+  }
 
 
   memory   = var.memory
