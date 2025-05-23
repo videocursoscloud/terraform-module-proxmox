@@ -12,7 +12,7 @@ resource "proxmox_vm_qemu" "testvm" {
   memory   = var.memory
   balloon  = var.balloon
 
-  full_clone = "true"
+  full_clone = var.full_clone
   scsihw   = "virtio-scsi-pci"
   boot                   = "order=scsi0"
   ipconfig0 = "ip=${var.ip},gw=${var.gw}"

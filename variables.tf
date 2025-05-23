@@ -1,3 +1,6 @@
+variable "full_clone"{
+  default=true
+}
 variable "memory"{
   default = "1024"
 }
